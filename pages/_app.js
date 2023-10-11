@@ -1,12 +1,16 @@
+import { NextUIProvider } from "@nextui-org/react";
+import "/styles/globals.css";
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import '../styles/globals.css';
+
 export default function App({ Component, pageProps }) {
   return (
-    <>
-      <Header/>
-      <Component {...pageProps} />
-      <Footer />
-    </>
+    <main className="w-[24rem]">
+      <NextUIProvider>
+        {/* <Header/> */}
+        <Component {...pageProps} />
+        {/* <Footer /> */}
+      </NextUIProvider>
+    </main>
   );
 }
