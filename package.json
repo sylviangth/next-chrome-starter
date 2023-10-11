@@ -15,17 +15,13 @@
   "license": "ISC",
   "dependencies": {
     "@nextui-org/react": "^2.1.13",
-    "ai": "^2.2.14",
     "axios": "^1.5.1",
     "framer-motion": "^10.16.4",
     "glob": "^10.2.3",
     "next": "^13.4.1",
-    "openai": "^4.11.1",
-    "openai-edge": "^1.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-intersection-observer": "^9.5.2",
-    "react-speech-recognition": "^3.10.0"
+    "react-intersection-observer": "^9.5.2"
   },
   "devDependencies": {
     "@types/node": "20.8.4",

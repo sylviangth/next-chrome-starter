@@ -96,9 +96,10 @@ const ChatWindow = ({ fetchQueriesCount, licenseKey, apiKey, queriesCount }) => 
       })
   }
 
-  const getContext = async (query) => {
+  const getContext = async (userQuery) => {
     const scrapeAll = false;
-    const apiUrl = `https://fymvbnibdm.us-west-2.awsapprunner.com/api/context/get-context-from-url?openai_api_key=${apiKey}&query=${query}&url=${currentUrl}&scrape_all=${scrapeAll}`;
+    const apiUrl = `https://fymvbnibdm.us-west-2.awsapprunner.com/api/context/get-context-from-url?openai_api_key=${apiKey}&query=${userQuery}&url=${currentUrl}&scrape_all=${scrapeAll}`;
+    console.log(apiUrl);
     try {
       const response = await fetch(apiUrl, {
         method: 'POST',

@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Mindie",
+  "name": "Mindie - Your AI Second Brain",
   "short_name": "MD",
   "version": "0.0.1",
-  "description": "Chat with anything from the web!",
+  "description": "Chat with anything from the web, be it a YouTube video, a PDF, or a blog - pretty much anything!",
   "icons": {
     "16": "/icons/icon16.png",
     "32": "/icons/icon32.png",
@@ -11,7 +11,7 @@
     "192": "/icons/icon192.png"
   },
   "permissions": [
-    "storage", "tabs", "unlimitedStorage"
+    "storage", "activeTab", "unlimitedStorage"
   ],
   "web_accessible_resources": [
     {
@@ -25,7 +25,6 @@
       "js": ["inject.js"]
     }
   ],
-  "host_permissions": ["<all_urls>"],
   "action": {
     "default_popup": "index.html"
   }
